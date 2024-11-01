@@ -7,12 +7,12 @@ import styles from './mainPage.module.css';
 
 const MainPage:FC = () => {
 
-	const [component, setComponent] = React.useState<null | React.ReactNode>(null);
+	const [title, setTitle] = React.useState<string>('Титульная страница');
 
 	return (
 		<div className={styles.wrapper}>
-			<Aside foo={setComponent}/>
-			<MainBlock Component={component}/>
+			<Aside returnTitle={setTitle}/>
+			<MainBlock title={title}/>
 		</div>
 	)
 }

@@ -1,24 +1,23 @@
 import { FC } from "react";
-import TitulPage from "../titul-page";
-import React from "react";
+import { mainBlockComponents } from "../../consts";
+import AsideLink from "./components";
+import styles from './aside.module.css';
 
 type props = {
-	foo: (component: React.ReactNode | null) => void
+	returnTitle: (title: string) => void
 }
 
-const Aside:FC<props> = ( { foo } ) => {
+const Aside:FC<props> = ( { returnTitle } ) => {
 
-	const choseComponent = () => {
-		foo(<TitulPage />);
+	const linkRender = () => {
+		return mainBlockComponents.map((el) => {
+			return <AsideLink key={el.title} title={el.title} returnTitle={returnTitle}/>
+		});
 	}
 
-	React.useEffect(() => {
-		choseComponent()
-	}, []);
-
 	return (
-		<div>
-
+		<div className={styles.wrapper}>
+			{linkRender()}
 		</div>
 	)
 }
