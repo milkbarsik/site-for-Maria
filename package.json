@@ -1,0 +1,11 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Maria",
+  "license": "MIT",
+	"scripts": {
+		"lint": "eslint \"./src/**/*.{js,jsx,ts,tsx}\"",
+  	"lint:fix": "eslint \"./src/**/*.{js,jsx,ts,tsx}\" --fix"
+	}
+}
