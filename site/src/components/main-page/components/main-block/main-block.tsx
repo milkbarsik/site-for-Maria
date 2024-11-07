@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { mainBlockComponents } from "../../consts";
+import styles from './main-block.module.css';
 
 type props = {
 	title: string;
@@ -13,7 +14,7 @@ const MainBlock:FC<props> = ( { title } ) => {
 	}
 
 	return (
-		<div>
+		<div className={styles.wrapper}>
 			{title !== null && componentRender()}
 		</div>
 	)
