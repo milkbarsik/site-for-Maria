@@ -40,6 +40,13 @@ const Productivity:FC = () => {
 								height="auto"
 								width="100%"
 							/>
+							<Myimage 
+								url={rusGraphic}
+								position="center"
+								size="cover"
+								height="auto"
+								width="100%"
+							/>
 					</li>
 				</ul>
 			</p>
