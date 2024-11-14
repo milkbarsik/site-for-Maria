@@ -6,6 +6,10 @@
 	align-items: center;
 }
 
+section {
+	padding: 7vh 0;
+}
+
 h1 {
 	text-align: center;
 }
@@ -14,4 +18,9 @@ h1 {
 	width: 80%;
 	margin-top: calc((1vh + 1vw));
 	text-align: justify;
+}
+
+li {
+	margin-bottom: 2rem;
+	padding-left: 2rem;
 }
