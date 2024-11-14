@@ -1,6 +1,7 @@
 import { FC } from "react";
 import styles from './activity.module.css';
 import Myimage from "../../../../../../assets/ui/image";
+import Pdf from "../../../../../../assets/ui/pdf";
 import titul from 'assets/activity/titul.jpeg';
 
 
@@ -12,6 +13,8 @@ import olimp5 from 'assets/activity/olimp/olimp5.jpg';
 import olimp6 from 'assets/activity/olimp/olimp6.jpg';
 import olimp7 from 'assets/activity/olimp/olimp7.jpg';
 import olimp8 from 'assets/activity/olimp/olimp8.jpg';
+
+import pdf1 from 'assets/activity/2019-2020/pdf1a.pdf';
 
 const Activity:FC = () => {
 
@@ -235,7 +238,7 @@ const Activity:FC = () => {
 							<i>Уровень образовательной организации.</i> 
 							Всероссийский конкурс юных чтецов "Живая классика" 2020, 
 							1 победитель, 4 участника.
-
+							<Pdf src={pdf1} width={'100%'} height={'100vh'} />
 						</li>
 					</ol>
 				</p>
