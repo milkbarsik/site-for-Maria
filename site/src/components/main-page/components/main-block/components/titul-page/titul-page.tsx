@@ -11,8 +11,6 @@ const TitulPage:FC = () => {
 			
 			<Myimage 
 				url={image}
-				position="center"
-				size="contain"
 				height="calc((1vh + 1vw) * 25)"
 				width="auto"
 			/>
