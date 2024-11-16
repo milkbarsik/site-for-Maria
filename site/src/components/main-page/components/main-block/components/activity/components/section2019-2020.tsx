@@ -1,6 +1,6 @@
 import { FC } from "react";
-import Pdf from "../../../../../../assets/ui/pdf";
-import Myimage from "../../../../../../assets/ui/image";
+import Pdf from "../../../../../../../assets/ui/pdf";
+import Myimage from "../../../../../../../assets/ui/image";
 
 import pdf1 from 'assets/activity/2019-2020/pdf1a.pdf';
 import jpgb1 from 'assets/activity/2019-2020/jpg1b.jpg';
@@ -13,10 +13,9 @@ import jpg5 from 'assets/activity/2019-2020/jpg5.jpg';
 
 const Section2019:FC = () => {
 	return (
-		<div>
 			<section>
 				<h2>2019-2020 учебный год</h2>
-				<p>
+				<div className="content_wrapper">
 					<ol>
 						<li>
 							<i>Уровень образовательной организации.</i> 
@@ -48,9 +47,8 @@ const Section2019:FC = () => {
 							<Myimage url={jpg5} width={'70%'} height={'auto'} />
 						</li>
 					</ol>
-				</p>
+				</div>
 			</section>
-		</div>
 	)
 }
 

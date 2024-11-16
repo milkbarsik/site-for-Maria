@@ -2,10 +2,9 @@ import { FC } from "react";
 
 const Section2018:FC = () => {
 	return (
-		<div>
 			<section>
 				<h2>2018-2019 учебный год</h2>
-				<p>
+				<div className="content_wrapper">
 					<ol>
 						<li>
 							<i>Уровень образовательной организации.</i> Всероссийский конкурс 
@@ -89,9 +88,8 @@ const Section2018:FC = () => {
 							В конкурсе также участвовали еще две девочки.
 						</li>
 					</ol>
-				</p>
+				</div>
 			</section>
-		</div>
 	)
 }
 

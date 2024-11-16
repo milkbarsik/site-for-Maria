@@ -1,26 +1,11 @@
-.wrapper, section {
+.wrapper{
+	width: 100%;
+	display: flex;
+}
+ .content {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-}
-
-section {
-	padding: 7vh 0;
-}
-
-h1 {
-	text-align: center;
-}
-
-.wrapper p {
-	width: 80%;
-	margin-top: calc((1vh + 1vw));
-	text-align: justify;
-}
-
-li {
-	margin-bottom: 2rem;
-	padding-left: 2rem;
-}
+ }

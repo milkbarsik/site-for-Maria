@@ -2,10 +2,9 @@ import { FC } from "react";
 
 const Section2017:FC = () => {
 	return (
-		<div>
 			<section>
 				<h2>2017-2018 учебный год</h2>
-				<p>
+				<div className="content_wrapper">
 					<ol>
 						<li>
 							<i>Уровень образовательной организации.</i> Всероссийский конкурс юных 
@@ -40,9 +39,8 @@ const Section2017:FC = () => {
 							1 участник. Дистанционный конкурс.
 						</li>
 					</ol>
-				</p>
+				</div>
 			</section>
-		</div>
 	)
 }
 

@@ -13,8 +13,8 @@
 }
 
 .active {
-	border-bottom: 1px white solid;
-	color: white;
+	border-bottom: 1px white solid !important;
+	color: white !important;
 }
 
 .content:hover {

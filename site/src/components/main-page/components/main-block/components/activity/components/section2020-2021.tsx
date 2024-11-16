@@ -7,10 +7,9 @@ import pdf4a from 'assets/activity/2020-2021/pdf4a.pdf';
 import pdf4b from 'assets/activity/2020-2021/pdf4b.pdf';
 const Section2020:FC = () => {
 	return (
-		<div>
 			<section>
 				<h2>2020-2021 учебный год</h2>
-				<p>
+				<div className="content_wrapper">
 					<ol>
 						<li>
 							<i>Муниципальный уровень.</i> Всероссийский конкурс сочинений "Без срока давности", 1 победитель.
@@ -31,9 +30,8 @@ const Section2020:FC = () => {
 							<Pdf src={pdf4b} width={'100%'} height={'100vh'} />
 						</li>
 					</ol>
-				</p>
+				</div>
 			</section>
-		</div>
 	)
 }
 

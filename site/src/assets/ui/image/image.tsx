@@ -9,9 +9,9 @@ type Timage = {
 
 const Myimage:FC<Timage> = ( param ) => {
 	return (
-		<div className={styles.wrapper}>
+		<a href={param.url} target="_blank" className={styles.wrapper}>
 			<img src={param.url} alt="" style={{height: `${param.height}`, width: `${param.width}`}} className={styles.image}/>
-		</div>
+		</a>
 	)
 }
 

@@ -22,10 +22,9 @@ import rusBear7 from 'assets/activity/2021-2022/rusBear7.jpg';
 
 const Section2021:FC = () => {
 	return (
-		<div>
 			<section>
 				<h2>2021-2022 учебный год</h2>
-				<p>
+				<div className="content_wrapper">
 					<ol>
 						<li>
 							<i>Уровень образовательной организации.</i> Конкурс сочинений "Моя будущая профессия", 3 победителя.
@@ -60,9 +59,8 @@ const Section2021:FC = () => {
 							<Myimage url={rusBear7} width={'70%'} height={'auto'} />
 						</li>
 					</ol>
-				</p>
+				</div>
 			</section>
-		</div>
 	)
 }
 
