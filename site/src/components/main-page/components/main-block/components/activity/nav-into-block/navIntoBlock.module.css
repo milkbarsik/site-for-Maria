@@ -1,15 +1,15 @@
 .wrapper {
 	height: min-content;
 	position: sticky;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	word-break: keep-all;
+	white-space: nowrap;
+	width: max-content;
 	right: 0;
 	top: 50%;
 	transform: translateY(-50%) translateX(calc((1vh + 1vw) * 4));
-	text-orientation: upright;
-	writing-mode: vertical-rl;
 	border-radius: 5px 0 0 5px;
 	padding: 0rem 0rem;
-}
-
-button {
-	border-right: none;
 }

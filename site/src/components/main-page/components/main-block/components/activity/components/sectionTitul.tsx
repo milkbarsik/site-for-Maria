@@ -10,6 +10,7 @@ import olimp6 from 'assets/activity/olimp/olimp6.jpg';
 import olimp7 from 'assets/activity/olimp/olimp7.jpg';
 import olimp8 from 'assets/activity/olimp/olimp8.jpg';
 
+
 const SectionTitul:FC = () => {
 	return (
 			<section>

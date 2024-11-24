@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { Tprops } from "../activity";
 
 import Myimage from "../../../../../../../assets/ui/image";
 import Pdf from "../../../../../../../assets/ui/pdf";
@@ -17,9 +18,9 @@ import jpg8a from 'assets/activity/2022-2023/jpg8a.jpeg';
 import jpg8b from 'assets/activity/2022-2023/jpg8b.jpeg';
 import jpg8v from 'assets/activity/2022-2023/jpg8v.jpeg';
 
-const Section2022:FC = () => {
+const Section2022:FC<Tprops> = ( {propRef} ) => {
 	return (
-			<section>
+			<section ref={propRef}>
 				<h2>2022-2023 учебный год</h2>
 				<div className="content_wrapper">
 					<ol>

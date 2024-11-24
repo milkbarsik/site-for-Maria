@@ -1,5 +1,6 @@
 import { FC } from "react";
 import Myimage from "../../../../../../../assets/ui/image";
+import { Tprops } from "../activity";
 
 import jpg1a from 'assets/activity/2021-2022/jpg1a.jpg';
 import jpg1b from 'assets/activity/2021-2022/jpg1b.jpg';
@@ -20,9 +21,9 @@ import rusBear5 from 'assets/activity/2021-2022/rusBear5.jpg';
 import rusBear6 from 'assets/activity/2021-2022/rusBear6.jpg';
 import rusBear7 from 'assets/activity/2021-2022/rusBear7.jpg';
 
-const Section2021:FC = () => {
+const Section2021:FC<Tprops> = ( {propRef} ) => {
 	return (
-			<section>
+			<section ref={propRef}>
 				<h2>2021-2022 учебный год</h2>
 				<div className="content_wrapper">
 					<ol>

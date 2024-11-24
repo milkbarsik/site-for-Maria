@@ -6,9 +6,7 @@ import pdf2 from 'assets/activity/2024-2025/pdf2.pdf';
 import pdf3 from 'assets/activity/2024-2025/pdf3.pdf';
 import pdf4 from 'assets/activity/2024-2025/pdf4.pdf';
 
-type Tprops = {
-	propRef: React.RefObject<HTMLElement>
-}
+import { Tprops } from "../activity";
 
 const Section2024:FC<Tprops> = ( {propRef} ) => {
 	return (

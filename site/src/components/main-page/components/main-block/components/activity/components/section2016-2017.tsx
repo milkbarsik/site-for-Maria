@@ -1,9 +1,9 @@
 import { FC } from "react";
+import { Tprops } from "../activity";
 
-
-const Section2016:FC = () => {
+const Section2016:FC<Tprops> = ( {propRef} ) => {
 	return (
-			<section>
+			<section ref = {propRef}>
 				<h2>2016-2017 учебный год</h2>
 				<div className="content_wrapper">
 					<ol>
