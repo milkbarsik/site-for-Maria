@@ -6,6 +6,24 @@
 	align-items: center;
 }
 
-h1 {
+.wrapper h1 {
 	text-align: center;
+}
+
+.wrapper p {
+	width: 80%;
+	margin-top: calc((1vh + 1vw));
+	text-align: justify;
+}
+
+.contentWrapper {
+	width: 80%;
+	margin-top: calc((1vh + 1vw));
+	text-align: justify;
+	margin: 1rem 0;
+}
+
+.contentWrapper ol li {
+	margin-bottom: 2rem;
+	padding-left: 2rem;
 }

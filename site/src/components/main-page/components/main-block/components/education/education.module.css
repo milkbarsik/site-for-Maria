@@ -12,6 +12,6 @@ h1 {
 
 .wrapper p {
 	width: 80%;
-	margin-top: calc((1vh + 1vw));
+	margin-top: 2.5rem;
 	text-align: justify;
 }

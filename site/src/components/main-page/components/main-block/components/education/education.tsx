@@ -10,8 +10,6 @@ const Education:FC = () => {
 			<h1>Образование</h1>
 			<Myimage 
 				url={image}
-				position="center"
-				size="100% 100%"
 				height="auto"
 				width="100%"
 			/>
