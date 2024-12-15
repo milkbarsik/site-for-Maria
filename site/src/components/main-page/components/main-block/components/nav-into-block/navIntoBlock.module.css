@@ -1,0 +1,40 @@
+.wrapper {
+	display: flex;
+	align-items: center;
+	position: fixed;
+	height: min-content;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%) translateX(100%);
+	transition: 0.5s;
+}
+
+.ActiveWrapper {
+	display: flex;
+	align-items: center;
+	position: fixed;
+	height: min-content;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%) ;
+	transition: 0.5s;
+}
+
+.elems {
+	height: min-content;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	row-gap: 1rem;
+	word-break: keep-all;
+	width: max-content;
+	max-width: 30rem;
+	border-radius: 5px 0 0 5px;
+	padding: 0rem 0rem;
+}
+
+.navButton {
+	writing-mode: vertical-lr;
+	position: absolute;
+	transform: translateX(calc(-1rem - 100%)) rotateZ(180deg);
+}

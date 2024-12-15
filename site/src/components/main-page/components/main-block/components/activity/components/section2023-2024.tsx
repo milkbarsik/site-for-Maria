@@ -6,7 +6,7 @@ import { Tprops } from "../activity";
 import jpg3 from 'assets/activity/2023-2024/jpg3.jpg';
 import jpg5 from 'assets/activity/2023-2024/jpg5.jpeg';
 import pdf1 from 'assets/activity/2023-2024/pdf1.pdf';
-import pdf2 from 'assets/activity/2023-2024/pdf2.pdf';
+import jpg2 from 'assets/activity/2023-2024/jpg2.jpg';
 import pdf4 from 'assets/activity/2023-2024/pdf4.pdf';
 
 const Section2023:FC<Tprops> = ( {propRef} ) => {
@@ -21,7 +21,7 @@ const Section2023:FC<Tprops> = ( {propRef} ) => {
 						</li>
 						<li>
 							<i>Региональный уровень.</i> Олимпиада союзного государства "Россия-Беларусь", 1 участник.
-							<Pdf src={pdf2} width={'100%'} height={'100vh'} />
+							<Myimage url={jpg2} width={'70%'} height={'auto'} />
 						</li>
 						<li>
 							<i>Муниципальный уровень.</i> Открытый городской фестиваль детского творчества «Пущинская весна-2024» в номинации 

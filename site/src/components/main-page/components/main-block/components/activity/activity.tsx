@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import styles from './activity.module.css';
 import Myimage from "../../../../../../assets/ui/image";
 import titul from 'assets/activity/titul.jpeg';
@@ -15,13 +15,9 @@ import SectionTitul from "./components/sectionTitul";
 import Section2022 from "./components/section2022-2023";
 import Section2023 from "./components/section2023-2024";
 import Section2024 from "./components/section2024-2025";
-import NavIntoBlock from "./nav-into-block";
+import NavIntoBlock from "../nav-into-block";
 
-export type Tprops = {
-	propRef: React.RefObject<HTMLDivElement>
-}
-
-const Activity:FC = () => {
+const Activity = () => {
 
 	const sectionTitul = React.useRef<HTMLDivElement>(null);
 	const section2016 = React.useRef<HTMLDivElement>(null);
@@ -35,17 +31,30 @@ const Activity:FC = () => {
 	const section2024 = React.useRef<HTMLDivElement>(null);
 	
 	const refs: Record<string, React.RefObject<HTMLDivElement>> = {
-			sectionTitul,
-			section2016,
-			section2017,
-			section2018,
-			section2019,
-			section2020,
-			section2021,
-			section2022,
-			section2023,
-			section2024,
+		sectionTitul,
+		section2016,
+		section2017,
+		section2018,
+		section2019,
+		section2020,
+		section2021,
+		section2022,
+		section2023,
+		section2024,
 	};
+
+	const titles: Record<string, string> = {
+		sectionTitul: "В начало",
+		section2016: "2016-2017",
+		section2017: "2017-2018",
+		section2018: "2018-2019",
+		section2019: "2019-2020",
+		section2020: "2020-2021",
+		section2021: "2021-2022",
+		section2022: "2022-2023",
+		section2023: "2023-2024",
+		section2024: "2024-2025",
+	}
 	
 	const scrollToSection = (refLink: React.RefObject<HTMLElement>) => {
 		refLink.current?.scrollIntoView({ behavior: 'smooth' });
@@ -69,7 +78,7 @@ const Activity:FC = () => {
 				<Section2023 propRef={refs.section2023} />
 				<Section2024 propRef={refs.section2024}/>
 			</div>
-			<NavIntoBlock foo={scrollToSection} refs={refs}/>
+			<NavIntoBlock foo={scrollToSection} refs={refs} titles={titles}/>
 		</div>
 	)
 }

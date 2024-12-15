@@ -2,9 +2,32 @@
 	display: flex;
 	flex-direction: column;
 	width: 20%;
-	height: min-content;
+	height: 100vh;
 	padding: calc(1vh + 1vw);
 	padding-right: 0;
 	position: sticky;
 	top: 0;
+	overflow-y: scroll;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
 }
