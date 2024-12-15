@@ -4,8 +4,13 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	}
-	
+}
+
+.wrapper h1 {
+	text-align: center;
+	margin-bottom: 2.5rem;
+}
+
 .wrapper p {
 	width: 80%;
 	margin-top: 2.5rem;

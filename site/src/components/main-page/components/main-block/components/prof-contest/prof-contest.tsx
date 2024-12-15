@@ -28,7 +28,7 @@ const ProfContest:FC = () => {
 				<p>
 					В рамках конкурса были представлены следующие материалы:
 				</p>
-				<div>
+				<div className={styles.contentWrapper}>
 					<ul>
 						<li>
 							Мастер-класс "У меня это хорошо получается";
@@ -54,7 +54,7 @@ const ProfContest:FC = () => {
 				<p>
 					В рамках конкурса были представлены следующие материалы:
 				</p>
-				<div>
+				<div className={styles.contentWrapper}>
 					<ul>
 						<li>
 							Видеоролик "Самопрезентация" (<a href="https://www.youtube.com/watch?v=yracL6tNK74&feature=youtu.be">ссылка на видео</a>);
@@ -81,7 +81,7 @@ const ProfContest:FC = () => {
 				<p>
 					В рамках конкурса были представлены следующие материалы:
 				</p>
-				<div>
+				<div className={styles.contentWrapper}>
 					<ul>
 						<li>
 							Открытый урок русского языка в 8 классе на тему 
@@ -110,7 +110,7 @@ const ProfContest:FC = () => {
 				<p>
 					В рамках конкурса были представлены следующие материалы:
 				</p>
-				<div>
+				<div className={styles.contentWrapper}>
 					<ul>
 						<li>
 							Видеоролик "Самопрезентация"

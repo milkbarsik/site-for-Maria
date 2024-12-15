@@ -8,22 +8,18 @@
 
 .wrapper h1 {
 	text-align: center;
+	margin-bottom: 2.5rem;
 }
 
-.wrapper p {
+.wrapper p, .contentWrapper {
 	width: 80%;
-	margin-top: calc((1vh + 1vw));
+	margin-top: 2.5rem;
 	text-align: justify;
+	text-indent: 4rem;
 }
 
-.contentWrapper {
-	width: 80%;
-	margin-top: calc((1vh + 1vw));
-	text-align: justify;
-	margin: 1rem 0;
-}
-
-.contentWrapper ol li {
-	margin-bottom: 2rem;
+.wrapper li {
+	margin-bottom: 2.5rem;
 	padding-left: 2rem;
+	text-indent: 0;
 }

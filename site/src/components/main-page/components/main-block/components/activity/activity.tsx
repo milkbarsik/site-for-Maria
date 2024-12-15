@@ -56,7 +56,7 @@ const Activity:FC = () => {
 			<div className={styles.content}>
 				<header>
 					<h1>Деятельность по развитию обучающихся</h1>
-					<Myimage url={titul} height={'auto'} width={'90%'} />
+					<Myimage url={titul} height={'auto'} width={'100%'} />
 				</header>
 				<SectionTitul/>
 				<Section2016 propRef={refs.section2016} />

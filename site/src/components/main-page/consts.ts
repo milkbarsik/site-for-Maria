@@ -1,6 +1,7 @@
 import Activity from "./components/main-block/components/activity";
 import Education from "./components/main-block/components/education";
 import MetodActivity from "./components/main-block/components/metod-activity";
+import News from "./components/main-block/components/news";
 import Productivity from "./components/main-block/components/productivity";
 import ProfAward from "./components/main-block/components/prof-award";
 import ProfCompetence from "./components/main-block/components/prof-competence";
@@ -49,5 +50,9 @@ export const mainBlockComponents: ImainBlockComponents[] = [
 	{
 		Component: ProfAward,
 		title: 'Профессиональные награды',
+	},
+	{
+		Component: News,
+		title: 'Новости'
 	},
 ]

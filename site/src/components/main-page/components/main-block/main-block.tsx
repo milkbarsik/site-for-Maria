@@ -1,12 +1,13 @@
-import { FC } from "react";
 import { mainBlockComponents } from "../../consts";
 import styles from './main-block.module.css';
+import { useTitle } from "../../useTitle";
 
-type props = {
-	title: string;
-}
 
-const MainBlock:FC<props> = ( { title } ) => {
+const MainBlock = () => {
+
+	const {
+		title
+	} = useTitle();
 
 	const componentRender = () => {
 		const Component = mainBlockComponents.find((el) => el.title === title)?.Component;

@@ -1,24 +1,25 @@
 import { FC } from "react";
 import styles from './aside-link.module.css';
+import { useTitle } from "../../../useTitle";
 
 type Ttitle = {
 	title: string;
-	returnTitle: (param: string) => any;
-	isActive: string;
-	setActive: (param: string) => any;
 }
 
-const AsideLink:FC<Ttitle> = ( { title, returnTitle, isActive, setActive } ) => {
+const AsideLink:FC<Ttitle> = ( { title } ) => {
 
+	const {
+		title: stateTitle,
+		setTitle
+	} = useTitle();
 
 const clicked = () => {
-	returnTitle(title);
-	setActive(title);
+	setTitle(title);
 }
 
 	return (
 		<div className={styles.wrapper} onClick={clicked}>
-			<p className={ `${styles.content} ${title === isActive ? styles.active : ''}` }>{title}</p>
+			<p className={ `${styles.content} ${title === stateTitle ? styles.active : ''}` }>{title}</p>
 		</div>
 	)
 }

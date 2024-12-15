@@ -11,7 +11,7 @@ const ProfCompetence:FC = () => {
 	return (
 		<div className={styles.wrapper}>
 			<h1>Профессиональная компетентность</h1>
-			<Myimage url={titul} width="70%" height="auto" />
+			<Myimage url={titul} width="auto" height="80vh" />
 			<p>
 				Ежегодно прохожу исследование компетенций учителя по предмету - 
 				русскому языку или литературе. Последнее тестирование по литературе 

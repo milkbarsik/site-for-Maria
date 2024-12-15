@@ -23,7 +23,7 @@ const ProfDev:FC = () => {
 	return (
 		<div className={styles.wrapper}>
 			<h1>Повышение квалификации</h1>
-			<Myimage url={titul} width="100%" height="auto" />
+			<Myimage url={titul} width="auto" height="80vh" />
 			<p>
 				Я считаю, что учитель должен постоянно повышать свой профессиональный уровень, 
 				если он хочет добиться высокого качества знаний у детей. 

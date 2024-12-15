@@ -16,7 +16,7 @@ const ProfAward:FC = () => {
 	return (
 		<div className={styles.wrapper}>
 			<h1>Профессиональные награды</h1>
-			<Myimage url={titul} width="100%" height="auto" />
+			<Myimage url={titul} width="auto" height="80vh" />
 			<p>
 				Моя профессиональная деятельность не раз была отмечена 
 				профессиональными наградами различных уровней.
